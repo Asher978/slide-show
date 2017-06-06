@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+<div class="desktop_logo">
+	<img src="logo_desktop.png">
+</div>
+<!-- <div class="tableA">
+	<table>
+		<tr>
+			<td><img class="characters" height="350px" width="250px" src="gifA.gif" loop="infinite"></td>
+		</tr>
+	</table>
+</div> -->
+<footer>
+	<ul>
+		<li><a href="#">Home</li></a>
+		<li><a href="#characters">Characters</a>
+		<li><a href="#">Social</a>
+		<li><a href="#">
+				<video class="logo" autoplay loop>
+					<source src="megatron.mp4" type="video/mp4">
+					<source src="megatron.webm" type="video/webm">
+				</video>
+			</a>
+		</li>
+	</ul>
+</footer>
+<!-- <div class="button"> -->
+<a id="test1" class="back-button right" onclick="plusDivs(-1)">&#10094;</a>
+<a id="test2" class="forward-button left" onclick="plusDivs(+1)">&#10095;</a>
+<!-- </div> -->
+
+<div class="images">
+	<img class="mySlides" src="ovsm.jpg">
+	<div class="mySlides">	
+		<table>
+		<tr>
+			<td><img height="350px" width="250px" src="gifA.gif" loop="infinite"></td>
+			<td><img height="350px" width="250px" src="gifA.gif" loop="infinite"></td>
+			<td><img height="350px" width="250px" src="gifA.gif" loop="infinite"></td>
+		</tr>
+		<tr>
+			<td><img height="350px" width="250px" src="gifA.gif" loop="infinite"></td>
+			<td><img height="350px" width="250px" src="gifA.gif" loop="infinite"></td>
+			<td><img height="350px" width="250px" src="gifA.gif" loop="infinite"></td>
+		</tr>
+		</div>
+	</table>
+</div>
+<img class="mySlides" src="shockwave.jpg">	
+<img class="mySlides" src="meganA.jpg">
+<img class="mySlides" src="tranfA.jpg">
+<img class="mySlides" src="dragon.jpg">
+<img class="mySlides" src="Tlogo.jpg">
+<img class="mySlides" src="meganfox.jpg">
+<img class="mySlides" src="optimus.jpg">
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+var slideIndex= 1;
+    showDivs(slideIndex);
+
+   function plusDivs(n){
+        showDivs(slideIndex+=n);
+    }
+    function showDivs(n){
+        var i=0;
+        var x= document.getElementsByClassName("mySlides");
+        if(n>x.length){slideIndex = 1}
+        if(n<1){slideIndex= x.length}
+        while(i<x.length){
+            x[i].style.display = "none";
+            i++;
+    }
+        x[slideIndex-1].style.display= "block";
+}
+</script>
+
+
+</html>
